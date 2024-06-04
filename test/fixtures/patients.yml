@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_of_birth: 2024-06-03
+  address: MyString
+  contact_number: MyString
+  fasting_requirements: false
+  user: one
+
+two:
+  date_of_birth: 2024-06-03
+  address: MyString
+  contact_number: MyString
+  fasting_requirements: false
+  user: two
