@@ -36,14 +36,14 @@ class Order < ApplicationRecord
   
       if last_serial_number_digits == 99_999
         next_serial_number_letter = last_serial_number_letter.next
-        next_serial_number_digits = 1
+        next_serial_number_digits = '00001'
       else
         next_serial_number_letter = last_serial_number_letter
         next_serial_number_digits = last_serial_number_digits + 1
       end
     else
       next_serial_number_letter = 'A'
-      next_serial_number_digits = 1
+      next_serial_number_digits = '00001'
     end
     
     "#{current_year}-#{lab_country_code}#{next_serial_number_letter}#{'%05d' % next_serial_number_digits}"
@@ -58,3 +58,4 @@ class Order < ApplicationRecord
   end
 
 end
+
